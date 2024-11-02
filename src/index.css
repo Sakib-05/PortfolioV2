@@ -1,6 +1,6 @@
 body{
     
-    margin: auto 90px ;
+    margin: auto 100px ;
     padding:0px;
     background-color:rgb(162, 215, 255);
 }
@@ -41,19 +41,35 @@ body{
 
 /* Banner section */
 .Banner{
-    padding: 10px;
-   
+    border: 1px solid;
     display: flex;
-    justify-content: space-between;
     padding-top: 100px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+#profilePic{
+    border-radius: 50%;
+    width: 440px;
+    padding-right: 30px;
+    
 }
 .introduction{
-    width: 60%;
+    max-width: 55%; 
+}
+.introduction h1{
+    font-size: 3rem;
+}
+.introduction p{
+    font-size: 1.1rem;
+}
+
+.socials img{
+    padding-inline: 10px;
+    width: 60px;
+    
 }
 .temp{
-    background-color: blue;
-    width: 40%;
-    height: 300px;
+    
     
 }
 

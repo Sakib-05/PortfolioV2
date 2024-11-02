@@ -4,12 +4,19 @@ export default function Banner() {
             <div className="introduction">
                 <h2>welcome to my portfolio website</h2>
                 <h1>Hi! I'm Sakib</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium commodi magni soluta corporis animi aliquam nihil perferendis ad atque aperiam molestiae, nobis, vero placeat tempora sequi in exercitationem iusto veniam.</p>
+                <p>As a second-year BSc Computer Science student at City University, I am known for my resilience,
+openness to new ideas, and strong logical thinking skills. Driven by a passion for technology and
+algorithms, I am dedicated to building a successful career in software engineering. My goal is to
+become a versatile full-stack developer, capable of tackling complex challenges and delivering
+innovative solutions.</p>
+                <br />
+                <div className="socials">
+                    <a href="https://www.linkedin.com/in/sbque05/" target="_blank" ><img src="./Images/linkedin-logo-grey.webp" alt="linkedin"/></a>
+                    <a href="https://github.com/Sakib-05" target="_blank"><img src="./Images/github-icon-grey.webp" alt="github" /></a>
+                    <a href="https://www.instagram.com/soku_ui/" target= "_blank"><img src="./Images/instagram-icon-grey.webp" alt="instagram" /></a>
+                </div>
             </div>
-            <div className="temp">
-                <p>image for later</p>
-
-            </div>
+            <img id="profilePic" src="./Images/profile picture.jpeg" alt="profile picture" />
         </div>
     );
     

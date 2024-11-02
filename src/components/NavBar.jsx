@@ -2,8 +2,8 @@ import { useState } from "react";
 
 export default function NavBar() {
     const [theme, setTheme] = useState(true);
-    let dark = "./dark icon.png";
-    let light = "./light icon.webp";
+    let dark = "./images/dark icon.png";
+    let light = "./images/light icon.webp";
 
     return(
         <div className="NavBar">
@@ -11,7 +11,7 @@ export default function NavBar() {
 
             <section>
                 {theme ? (<img onClick={()=>setTheme(!theme)} src={dark} alt="dark" />):(<img onClick={()=>setTheme(!theme)} src={light} alt="light" />) }
-                <a href="CV.pdf" target="_blank">resume</a>
+                <a href="/images/CV.pdf" target="_blank">resume</a>
             </section>
 
         </div>
