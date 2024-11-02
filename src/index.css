@@ -1,23 +1,38 @@
 body{
-    margin-top: 0px;
-    margin: auto 100px ;
-    padding:0px;
-}
-.NavBar h1{
-    margin: 0px;
     
+    margin: auto 70px ;
+    padding:0px;
+    background-color:rgb(162, 215, 255);
 }
+
+
+/* this is the NavBar styling */
 .NavBar{
     display: flex;
     justify-content: space-between;
-    margin-top:10px;
+    
 }
 .NavBar section{
     display: flex;
-    justify-content: space-between;
-    padding:10px;
+    gap: 15px;
+    align-items: center;
+    
 }
 .NavBar section img{
-    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
-
+.NavBar section a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 225, 155);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.NavBar section a:hover{
+    background-color:rgb(38, 251, 180) ;
+    padding: 13px;
+    transition: 0.5s;
+}
