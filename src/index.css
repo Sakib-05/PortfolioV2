@@ -10,6 +10,7 @@ body{
 .NavBar{
     display: flex;
     justify-content: space-between;
+    border: 1px solid;
     
 }
 .NavBar section{
@@ -35,4 +36,29 @@ body{
     background-color:rgb(38, 251, 180) ;
     padding: 13px;
     transition: 0.5s;
+}
+
+/* Banner section */
+.Banner{
+    border: 1px solid;
+}
+
+/* Skills section */
+.Skills{
+    border: 1px solid;
+}
+
+/* Projects section */
+.Projects{
+    border: 1px solid;
+}
+
+/* Projects Contact */
+.Contact{
+    border: 1px solid;
+}
+
+/* Footer section */
+.Footer{
+    border: 1px solid;
 }
