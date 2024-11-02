@@ -1,6 +1,6 @@
 body{
     
-    margin: auto 70px ;
+    margin: auto 90px ;
     padding:0px;
     background-color:rgb(162, 215, 255);
 }
@@ -10,7 +10,6 @@ body{
 .NavBar{
     display: flex;
     justify-content: space-between;
-    border: 1px solid;
     
 }
 .NavBar section{
@@ -38,10 +37,29 @@ body{
     transition: 0.5s;
 }
 
+
+
 /* Banner section */
 .Banner{
-    border: 1px solid;
+    padding: 10px;
+   
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
 }
+.introduction{
+    width: 60%;
+}
+.temp{
+    background-color: blue;
+    width: 40%;
+    height: 300px;
+    
+}
+
+
+
+
 
 /* Skills section */
 .Skills{
