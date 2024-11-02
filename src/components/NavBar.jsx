@@ -1,7 +1,13 @@
 export default function NavBar() {
     return(
         <div className="NavBar">
-            <h1>this is the navbar</h1>
+            <h1>Logo</h1>
+
+            <section>
+                <img src="" alt="light/dark toggle" />
+                <button>Resume</button>
+            </section>
+
         </div>
 
 

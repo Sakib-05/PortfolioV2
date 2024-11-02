@@ -1,0 +1,23 @@
+body{
+    margin-top: 0px;
+    margin: auto 100px ;
+    padding:0px;
+}
+.NavBar h1{
+    margin: 0px;
+    
+}
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.NavBar section{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+}
+.NavBar section img{
+    padding: 10px;
+}
+
