@@ -9,6 +9,7 @@ function App() {
     <>
     <NavBar></NavBar>
     <h1>this is my portfolio version 2</h1>
+    <h1>test </h1>
       
     </>
   )
