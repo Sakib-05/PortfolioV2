@@ -9,7 +9,6 @@ openness to new ideas, and strong logical thinking skills. Driven by a passion f
 algorithms, I am dedicated to building a successful career in software engineering. My goal is to
 become a versatile full-stack developer, capable of tackling complex challenges and delivering
 innovative solutions.</p>
-                <br />
                 <div className="socials">
                     <a href="https://www.linkedin.com/in/sbque05/" target="_blank" ><img src="./Images/linkedin-logo-grey.webp" alt="linkedin"/></a>
                     <a href="https://github.com/Sakib-05" target="_blank"><img src="./Images/github-icon-grey.webp" alt="github" /></a>
