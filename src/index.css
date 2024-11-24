@@ -45,7 +45,7 @@ body{
     display: flex;
     padding-top: 100px;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 #profilePic{
     border-radius: 50%;
