@@ -2,7 +2,6 @@ body{
     
     margin: auto 100px ;
     padding:0px;
-    background-color:rgb(162, 215, 255);
 }
 
 
@@ -80,6 +79,46 @@ body{
 /* Skills section */
 .Skills{
     border: 1px solid;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 10px;
+}
+.Skills section{
+    border: 1px solid;
+    width: 350px;
+    justify-items: center;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.icons-container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.4rem;
+    
+    
+}
+.Skills-icons{
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+    border-radius: 0.5rem;
+    background-color:rgb(241 245 249 / 1);
+    gap:0.5rem;
+    
+}
+.Skills-icons h5,h4{
+    
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.Skills-icons img{
+    width: 30px;
+    
 }
 
 /* Projects section */
