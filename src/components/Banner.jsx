@@ -2,7 +2,6 @@ export default function Banner() {
     return (
         <div className="Banner">
             <div className="introduction">
-                <h2>welcome to my portfolio website</h2>
                 <h1>Hi! I'm Sakib</h1>
                 <p>As a second-year BSc Computer Science student at City University, I am known for my resilience,
 openness to new ideas, and strong logical thinking skills. Driven by a passion for technology and
