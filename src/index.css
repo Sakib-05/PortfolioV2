@@ -43,7 +43,7 @@ body{
     display: flex;
     padding-top: 100px;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 #profilePic{
     border-radius: 50%;
@@ -79,8 +79,10 @@ body{
 .Skills{
     border: 1px solid;
     display: flex;
-    justify-content:space-evenly;
-    padding: 10px;
+    justify-content:space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 }
 .Skills section{
     border: 1px solid;
@@ -90,7 +92,11 @@ body{
     padding: 5px;
 }
 
-.icons-container{
+.Skills section h1{
+    font-size: 1.2rem;
+}
+
+.skills-container{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -108,8 +114,7 @@ body{
     gap:0.5rem;
     
 }
-.Skills-icons h5,h4{
-    
+.Skills-icons h5{
     padding: 0px;
     margin: 0px;
     
