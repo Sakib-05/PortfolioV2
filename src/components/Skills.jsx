@@ -2,6 +2,8 @@ export default function Skills() {
     //test for commit
     return(
         <div className="Skills">
+            <h1>technical skills</h1>
+            <div className="skills-categories">
             <section>
                 <h1>programming languages</h1>
                 <br />
@@ -39,8 +41,11 @@ export default function Skills() {
                 
 
             </section>
+            
             <section>
                 <h1>web development</h1>
+                <br />
+                <br />
                 <br />
                 <br />
                 <div className="skills-container">
@@ -58,10 +63,9 @@ export default function Skills() {
                         <img src="Images/React icon.webp" alt="React"  />
                         <h5>React</h5>
                     </div>
-
                 </div>
-                
             </section>
+
             <section>
                 <h1>tools</h1>
                 <br />
@@ -90,6 +94,7 @@ export default function Skills() {
                 </div>
 
             </section>
+            </div>
         </div>
     );
     
