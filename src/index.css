@@ -10,6 +10,22 @@ body{
     justify-content: space-between;
     
 }
+#download-icon{
+    width:23px;
+    height: 23px;
+    padding:0px;
+    margin:0px;
+    margin-right: 5px;
+
+}
+.resume{
+    display: flex;
+    align-items: center;
+}
+.resume p{
+    margin:0px;
+    padding:0px;
+}
 .NavBar section{
     display: flex;
     gap: 15px;
@@ -26,8 +42,9 @@ body{
     color: rgb(255, 255, 255);
     background-color: rgb(16, 225, 155);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: 0.5s;
+    justify-items: center;
 }
 .NavBar section a:hover{
     background-color:rgb(38, 251, 180) ;

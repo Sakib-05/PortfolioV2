@@ -11,7 +11,12 @@ export default function NavBar() {
 
             <section>
                 {theme ? (<img onClick={()=>setTheme(!theme)} src={dark} alt="dark" />):(<img onClick={()=>setTheme(!theme)} src={light} alt="light" />) }
-                <a href="/images/CV.pdf" target="_blank">resume</a>
+                <a href="/images/CV.pdf" target="_blank">
+                    <div className="resume">
+                        <img src="Images/download icon.png" alt="download" id="download-icon" />
+                        <p>resume</p>
+                    </div>
+                </a>
             </section>
 
         </div>
