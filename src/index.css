@@ -162,7 +162,7 @@ body{
 
 /* Projects Section */
 .projects-container {
-    display: flex;
+   
     /* justify-content:space-evenly; */
     
     border: 1px solid;
@@ -207,14 +207,19 @@ body{
   
 .project-card .project-tech {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    gap:1px
 }
 .project-tech .tech{
-    border: 1px solid #0b0b0b;
+    border: 1px solid #bababa;
     padding: 2px;
     border-radius: 5px;
+    font-size: 0.7rem;
+    color: #555;
+
+    
 }
   
 .project-card .project-tech li {
