@@ -161,7 +161,7 @@ body{
 
 
 /* Projects Section */
-.projects-container {
+.Projects {
    
     /* justify-content:space-evenly; */
     
@@ -176,8 +176,8 @@ body{
     padding: 16px;
     transition: all 0.3s ease;
     cursor: pointer;
-    max-width: 300px;
-    margin: 0 auto;
+    width:200px;
+    
     text-align: center;
     
     background-color: #fff;
@@ -222,14 +222,9 @@ body{
     
 }
   
-.project-card .project-tech li {
-    font-size: 0.8rem;
-    color: #333;
-    margin: 4px 0;
-}
-  
 .project-card.expanded {
-    max-width: 500px;
+    width: 400px;
+    height: auto;
     background-color: #f9f9f9;
 }
 

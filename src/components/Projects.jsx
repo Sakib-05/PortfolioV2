@@ -4,7 +4,7 @@ import Project from "./Project";
 const Projects = () => {
   const projectsData = [
     {
-      image: "https://via.placeholder.com/300",
+      image: "/Images/Cpp icon.png",
       title: "Movie Review App",
       description: "This is a description for Project 1.",
       tech: ["React", "HTML","CSS", "JavaScript", "TMDB API"],
@@ -15,12 +15,31 @@ const Projects = () => {
       description: "This is a description for Project 2.",
       tech: ["HTML", "CSS", "JavaScript"],
     },
+    {
+        image: "https://via.placeholder.com/300",
+        title: "Dentists Platform",
+        description: "This is a description for Project 2.",
+        tech: ["HTML", "CSS", "JavaScript"],
+    },
+    {
+        image: "https://via.placeholder.com/300",
+        title: "Dentists Platform",
+        description: "This is a description for Project 2.",
+        tech: ["HTML", "CSS", "JavaScript"],
+    },
+    {
+        image: "https://via.placeholder.com/300",
+        title: "Dentists Platform",
+        description: "This is a description for Project 2.",
+        tech: ["HTML", "CSS", "JavaScript"],
+    },
+      
   ];
 
   return (
-    <div className="projects-container">
+    <div className="Projects">
         <h1 style={{justifySelf:"center"}}>Projects</h1>
-        <div style={{display:"flex"}}>
+        <div style={{display:"flex", flexWrap:"wrap", gap:"5px", justifyContent:"space-evenly"}}>
             {projectsData.map((project, index) => (
                 <Project
                 key={index}

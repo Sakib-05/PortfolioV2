@@ -15,11 +15,11 @@ const Project = ({ image, title, description, tech }) => {
       {isExpanded && (
         <div className="project-details">
           <p className="project-description">{description}</p>
-          <ul className="project-tech">
+          <div className="project-tech">
             {tech.map((item, index) => (
               <div className="tech" key={index}>{item}</div>
             ))}
-          </ul>
+          </div>
         </div>
       )}
     </div>
