@@ -32,6 +32,8 @@ const Projects = () => {
   return (
     <div className="Projects">
         <h1 style={{justifySelf:"center"}}>Projects</h1>
+        <p style={{justifySelf:"center"}}>Click to expand and view details of any project</p>
+        <br />
         <div style={{display:"flex", flexWrap:"wrap", gap:"15px", justifyContent:"space-evenly"}}>
             {projectsData.map((project, index) => (
                 <Project

@@ -163,25 +163,11 @@ body{
     border: 1px solid;
     padding-top: 35px;
     padding-bottom: 30px;
-    margin: auto 150px ;
+    margin: auto 100px ;
 }
 
 
-/* .project-card {
-    border: 1px solid #0b0b0b;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    width: 220px;
-    text-align: center;
-    background-color: #fff;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+
 .project-card {
     border: 1px solid #0b0b0b;
     border-radius: 12px;
@@ -190,20 +176,30 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* Ensures content doesn't stretch */
-    width: 200px;
-    height: 230px; /* Ensures all cards have a consistent height */
+    width: 220px;
+    height: 250px; /* Ensures all cards have a consistent height */
     transition: all 0.3s ease-in-out;
     overflow: hidden; /* Prevents content overflow */
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: scale(1.10);
+    box-shadow: 5px 5px 5px 3px rgba(88, 206, 252, 0.419);
+}
+.project-card.expanded:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 /* Adjust width and height when expanded */
 
 
 .project-card.expanded {
-    width: 300px;
+    width: 350px;
     min-height: auto; /* Allows only this card to grow */
     height: auto; /* Ensures content doesn't force other cards to expand */
-    flex-grow: 1;
+    
 }
 
 
