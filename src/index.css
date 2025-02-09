@@ -158,75 +158,89 @@ body{
     
 }
 
-
-
-/* Projects Section */
-.Projects {
-   
-    /* justify-content:space-evenly; */
-    
+/* Projects section */
+.Projects{
     border: 1px solid;
+    padding-top: 35px;
+    padding-bottom: 30px;
     margin: auto 150px ;
 }
-  
-.project-card {
+
+
+/* .project-card {
     border: 1px solid #0b0b0b;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 16px;
     transition: all 0.3s ease;
     cursor: pointer;
-    width:200px;
-    
+    width: 220px;
     text-align: center;
-    
     background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.project-card {
+    border: 1px solid #0b0b0b;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensures content doesn't stretch */
+    width: 200px;
+    height: 230px; /* Ensures all cards have a consistent height */
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; /* Prevents content overflow */
 }
-  
+
+/* Adjust width and height when expanded */
+
+
+.project-card.expanded {
+    width: 300px;
+    min-height: auto; /* Allows only this card to grow */
+    height: auto; /* Ensures content doesn't force other cards to expand */
+    flex-grow: 1;
+}
+
+
+/* Ensure image resizes properly */
 .project-card img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 1 / 0.90;
+    /* Maintain aspect ratio */
     border-radius: 8px;
 }
-  
-.project-card .project-title {
-    font-size: 1.2rem;
-    margin: 12px 0;
-    font-weight: bold;
-}
-  
-.project-card .project-details {
-    margin-top: 16px;
-}
-  
-.project-card .project-description {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 8px;
-}
-  
-.project-card .project-tech {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    gap:1px
-}
-.project-tech .tech{
-    border: 1px solid #bababa;
-    padding: 2px;
-    border-radius: 5px;
-    font-size: 0.7rem;
-    color: #555;
 
-    
+/* Ensure text and tech list wrap properly */
+.project-details {
+    width: 100%; /* Keep details inside the card */
+    text-align: center;
 }
-  
-.project-card.expanded {
-    width: 400px;
-    height: auto;
-    background-color: #f9f9f9;
+
+/* Tech list wrapping */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap; /* Wraps onto new lines */
+    justify-content: center;
+    gap: 5px;
+    padding: 0;
+    margin-top: 10px;
+    list-style: none;
 }
+
+.tech {
+    border: 1px solid #bababa;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #555;
+    white-space: nowrap; /* Keeps text in one line */
+}
+
 
 /* Projects Contact */
 .Contact{
