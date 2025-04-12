@@ -4,6 +4,12 @@ import Project from "./Project";
 const Projects = () => {
   const projectsData = [
     {
+      image: "/Images/ProjectsImages/DayView.png",
+      title: "Calendar app",
+      description: "A calendar system that I developed using Java and MySQL to display events stored in the database as part of a booking system.",
+      tech: ["Java", "MySQL", "Github Copilot"],
+    },  
+    {
       image: "/Images/ProjectsImages/movie review website project.png",
       title: "Movie Review App",
       description: "Developed a movie review web app using React and TMDB API.",
@@ -27,6 +33,7 @@ const Projects = () => {
         description: "My previous portfolio website that I developed using HTML, CSS, and JavaScript.",
         tech: ["HTML", "CSS", "JavaScript"],
     },  
+    
   ];
 
   return (

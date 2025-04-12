@@ -1,45 +1,49 @@
-body{
-    
-    padding:0px;
-}
+/* Import pixel font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+body {
+    padding: 0px;
+}
 
 /* this is the NavBar styling */
-.NavBar{
+.NavBar {
     display: flex;
     justify-content: space-between;
-    margin: auto 150px ;
-    
+    margin: auto 150px;
 }
-#download-icon{
-    width:23px;
-    height: 23px;
-    padding:0px;
-    margin:0px;
-    margin-right: 5px;
 
+#download-icon {
+    width: 23px;
+    height: 23px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 5px;
 }
-.resume{
+
+.resume {
     display: flex;
     align-items: center;
 }
-.resume p{
-    margin:0px;
-    padding:0px;
+
+.resume p {
+    margin: 0px;
+    padding: 0px;
 }
-.NavBar section{
+
+.NavBar section {
     display: flex;
     gap: 15px;
     align-items: center;
-    
 }
-.NavBar section img{
+
+.NavBar section img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
 }
-.NavBar section a{
-    text-decoration:none;
+
+.NavBar section a {
+    text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: rgb(16, 225, 155);
     padding: 10px;
@@ -47,76 +51,112 @@ body{
     transition: 0.5s;
     justify-items: center;
 }
-.NavBar section a:hover{
-    background-color:rgb(38, 251, 180) ;
+
+.NavBar section a:hover {
+    background-color: rgb(38, 251, 180);
     padding: 13px;
     transition: 0.5s;
 }
 
-
-
 /* Banner section */
-.Banner{
+.Banner {
     border: 1px solid;
     display: flex;
     padding-top: 100px;
     justify-content: space-between;
     padding-bottom: 100px;
-    margin: auto 150px ;
+    margin: auto 150px;
 }
-#profilePic{
+
+#profilePic {
     border-radius: 50%;
     width: 440px;
     height: 440px;
     padding-right: 30px;
-    
 }
-.introduction{
-    max-width: 55%; 
+
+.introduction {
+    max-width: 55%;
 }
-.introduction h1{
+
+.introduction h1 {
     font-size: 3rem;
 }
-.introduction p{
+
+.introduction .typing-effect {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8rem; /* Larger than before, but not overpowering h1 */
+    font-weight: 400;
+    min-height: 2.5rem; /* Adjusted for larger text */
+    margin: 1rem 0;
+    display: inline-block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Arcade glow effect */
+}
+
+.introduction .cursor {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    animation: blink 0.7s infinite;
+    font-weight: 100;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.introduction .about-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
     font-size: 1.1rem;
 }
 
-.socials img{
-    padding:10px;
+.introduction .about-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.introduction .about-list li::before {
+    content: '';
+    margin-right: 0.5rem;
+}
+
+.socials img {
+    padding: 10px;
     width: 60px;
     transition: 0.2s;
-
 }
-.socials img:hover{
+
+.socials img:hover {
     padding: 20px;
     transition: 0.2s;
 }
 
-
-
 /* Skills section */
-.Skills{
+.Skills {
     border: 1px solid;
     padding-top: 35px;
     padding-bottom: 30px;
-    margin: auto 150px ;
-    
+    margin: auto 150px;
 }
-.Skills{
+
+.Skills {
     justify-items: center;
     gap: 10px;
-
-
 }
-.skills-categories{
+
+.skills-categories {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     width: 100%;
-    height:100%;
+    height: 100%;
     flex-wrap: wrap;
-
 }
-.Skills section{
+
+.Skills section {
     border: 1px solid;
     width: 320px;
     height: 220px;
@@ -124,49 +164,45 @@ body{
     font-size: 1.1rem;
     padding: 5px;
     border-radius: 10px;
-
 }
 
-.skills-categories section h1{
+.skills-categories section h1 {
     font-size: 1.45rem;
 }
 
-.skills-container{
+.skills-container {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap:0.4rem;    
+    gap: 0.4rem;
 }
-.Skills-icons{
+
+.Skills-icons {
     border: 1px solid grey;
     display: flex;
     align-items: center;
     padding: .3rem;
     border-radius: 0.5rem;
-    background-color:rgb(241 245 249 / 1);
-    gap:0.5rem;
-    
-}
-.Skills-icons h5{
-    padding: 0px;
-    margin: 0px;
-    
+    background-color: rgb(241 245 249 / 1);
+    gap: 0.5rem;
 }
 
-.Skills-icons img{
+.Skills-icons h5 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.Skills-icons img {
     width: 30px;
-    
 }
 
 /* Projects section */
-.Projects{
+.Projects {
     border: 1px solid;
     padding-top: 35px;
     padding-bottom: 30px;
-    margin: auto 100px ;
+    margin: auto 100px;
 }
-
-
 
 .project-card {
     border: 1px solid #0b0b0b;
@@ -175,11 +211,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Ensures content doesn't stretch */
-    width: 220px;
-    height: 250px; /* Ensures all cards have a consistent height */
+    justify-content: flex-start;
+    width: 230px;
+    height: 260px;
     transition: all 0.3s ease-in-out;
-    overflow: hidden; /* Prevents content overflow */
+    overflow: hidden;
     cursor: pointer;
 }
 
@@ -187,40 +223,32 @@ body{
     transform: scale(1.10);
     box-shadow: 5px 5px 5px 3px rgba(88, 206, 252, 0.419);
 }
+
 .project-card.expanded:hover {
     transform: none;
     box-shadow: none;
 }
 
-/* Adjust width and height when expanded */
-
-
 .project-card.expanded {
     width: 350px;
-    min-height: auto; /* Allows only this card to grow */
-    height: auto; /* Ensures content doesn't force other cards to expand */
-    
+    min-height: auto;
+    height: auto;
 }
 
-
-/* Ensure image resizes properly */
 .project-card img {
     width: 100%;
     aspect-ratio: 1 / 0.90;
-    /* Maintain aspect ratio */
     border-radius: 8px;
 }
 
-/* Ensure text and tech list wrap properly */
 .project-details {
-    width: 100%; /* Keep details inside the card */
+    width: 100%;
     text-align: center;
 }
 
-/* Tech list wrapping */
 .project-tech {
     display: flex;
-    flex-wrap: wrap; /* Wraps onto new lines */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
     padding: 0;
@@ -234,9 +262,8 @@ body{
     border-radius: 5px;
     font-size: 0.8rem;
     color: #555;
-    white-space: nowrap; /* Keeps text in one line */
+    white-space: nowrap;
 }
-
 
 /* Contact Section */
 .Contact {
@@ -262,10 +289,9 @@ body{
     flex-wrap: wrap;
     gap: 10px;
 }
-.form-socials{
+
+.form-socials {
     display: flex;
-
-
 }
 
 /* Form Styling */
@@ -275,7 +301,6 @@ body{
     padding-bottom: 20px;
     padding-top: 20px;
     width: 50%;
-    
 }
 
 .form h1 {
@@ -345,7 +370,6 @@ body{
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 20px; */
 }
 
 .socials div {
@@ -363,38 +387,35 @@ body{
     font-size: 1rem;
 }
 
-
-
 .form-socials {
     display: flex;
-    justify-content: center; /* or flex-start */
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 40px; /* Adjust as needed */
+    gap: 40px;
 }
 
-
-
-.contact-socials{
-    margin:0px;
+.contact-socials {
+    margin: 0px;
 }
+
 /* Contact Socials Section */
 .contact-socials img {
-    width: 50px; /* Set a fixed width for the images */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px; /* Add some spacing around the images */
-    display: inline-block; /* Ensure proper alignment */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    transition: transform 0.3s ease; /* Add a hover effect */
+    width: 50px;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 
 .contact-socials img:hover {
-    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    transform: scale(1.1);
 }
 
 /* Footer section */
-.Footer{
+.Footer {
     border: 1px solid;
-    width:100%;
-    margin:0px;
+    width: 100%;
+    margin: 0px;
     background-color: rgb(156, 154, 154);
 }
