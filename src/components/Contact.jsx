@@ -1,31 +1,65 @@
+import React from "react";
+
 export default function Contact() {
-    return (
-        <div className="Contact">
-            <h1>Contact Me</h1>
-            <p style={{ textAlign: "center" }}>Feel free to reach out to me through any of the following platforms:</p>
-            <br />
-            <div style={{ display: "flex", justifyContent: "space-evenly", flexWrap: "wrap", gap: "20px" }}>
-                <div style={{ textAlign: "center" }}>
-                    <img src="./Images/mail-icon.png" alt="Email" style={{ width: "50px", marginBottom: "10px" }} />
-                    <p>Email: <a href="mailto:sakibimamul03@gmail.com" style={{ textDecoration: "none", color: "blue" }}>sakibimamul03@gmail.com</a></p>
-                </div>
-                <div style={{ textAlign: "center" }}>
-                    <img src="./Images/phone-call.png" alt="Phone" style={{ width: "50px", marginBottom: "10px" }} />
-                    <p>Phone: <a href="tel:+447368520305" style={{ textDecoration: "none", color: "blue" }}>07368520305</a></p>
-                </div>
-                <div style={{ textAlign: "center" }}>
-                    <img src="./Images/LN logo.png" alt="LinkedIn" style={{ width: "50px", marginBottom: "10px" }} />
-                    <p><a href="https://www.linkedin.com/in/sbque05/" target="_blank" style={{ textDecoration: "none", color: "blue" }}>LinkedIn</a></p>
-                </div>
-                <div style={{ textAlign: "center" }}>
-                    <img src="./Images/github logo.png" alt="GitHub" style={{ width: "50px", marginBottom: "10px" }} />
-                    <p><a href="https://github.com/Sakib-05" target="_blank" style={{ textDecoration: "none", color: "blue" }}>GitHub</a></p>
-                </div>
-                <div style={{ textAlign: "center" }}>
-                    <img src="./Images/instagram logo.png" alt="Instagram" style={{ width: "50px", marginBottom: "10px" }} />
-                    <p><a href="https://www.instagram.com/soku_ui/" target="_blank" style={{ textDecoration: "none", color: "blue" }}>Instagram</a></p>
-                </div>
-            </div>
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      alert("Message sent successfully!");
+      event.target.reset();
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  };
+
+  return (
+    <div className="Contact">
+      <h1>Contact Me</h1>
+      <p>
+        Feel free to reach out to me through any of the following platforms or
+        by filling out the form below:
+      </p>
+      <br />
+      <div className="form-socials">
+        <div className="form">
+          <form onSubmit={onSubmit}>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
         </div>
-    );
-};
+
+        <div className="contact-socials">
+          <h2>Connect through socials</h2>
+          <div>
+            <a target="_blank" href="https://www.linkedin.com/in/sbque05/">
+              <img src="/images/LN logo.png" alt="LinkedIn" />
+            </a>
+            <a target="_blank" href="https://github.com/Sakib-05">
+              <img src="/images/github logo.png" alt="GitHub" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/soku_ui/">
+              <img src="/images/instagram logo.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
