@@ -40,7 +40,7 @@ export default function Banner() {
   return (
     <div className="Banner">
       <div className="introduction">
-        <h1>Hi! I'm Sakib</h1>
+        <h1 style={{ margin: "0px" }}>Hi! I'm Sakib</h1>
         <h2 className="typing-effect" style={{ color: colors[sentenceIndex] }}>
           {displayedText}<span className="cursor">|</span>
         </h2>
@@ -65,6 +65,9 @@ export default function Banner() {
         </div>
       </div>
       <img id="profilePic" src="./Images/profile picture.jpeg" alt="profile picture" />
+      <div className="scroll-message">
+        <p>Scroll down to view other sections</p>
+      </div>
     </div>
   );
 }
