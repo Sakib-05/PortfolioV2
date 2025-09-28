@@ -49,13 +49,13 @@ export default function Contact() {
           <h2>Connect through socials</h2>
           <div>
             <a target="_blank" href="https://www.linkedin.com/in/sbque05/">
-              <img src="/images/LN logo.png" alt="LinkedIn" />
+              <img src="public/images/LN logo.png" alt="LinkedIn" />
             </a>
             <a target="_blank" href="https://github.com/Sakib-05">
-              <img src="/images/github logo.png" alt="GitHub" />
+              <img src="public/images/github logo.png" alt="GitHub" />
             </a>
             <a target="_blank" href="https://www.instagram.com/soku_ui/">
-              <img src="/images/instagram logo.png" alt="Instagram" />
+              <img src="public/images/instagram logo.png" alt="Instagram" />
             </a>
           </div>
         </div>

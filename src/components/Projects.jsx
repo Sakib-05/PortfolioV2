@@ -4,31 +4,31 @@ import Project from "./Project";
 const Projects = () => {
   const projectsData = [
     {
-      image: "/Images/ProjectsImages/DayView.png",
+      image: "public/Images/ProjectsImages/DayView.png",
       title: "Calendar app",
       description: "A calendar system that I developed using Java and MySQL to display events stored in the database as part of a booking system.",
       tech: ["Java", "MySQL", "Github Copilot"],
     },  
     {
-      image: "/Images/ProjectsImages/movie review website project.png",
+      image: "public/Images/ProjectsImages/movie review website project.png",
       title: "Movie Review App",
       description: "Developed a movie review web app using React and TMDB API.",
       tech: ["React", "JavaScript", "TMDB API"],
     },
     {
-      image: "/Images/ProjectsImages/dental healthcare platform.jpeg",
+      image: "public/Images/ProjectsImages/dental healthcare platform.jpeg",
       title: "Dentists Platform",
       description: "A hackathon project that helps dentists manage their patients and communicate.",
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
-        image: "/Images/ProjectsImages/java2DGame.png",
+        image: "public/Images/ProjectsImages/java2DGame.png",
         title: "2D Batman Game",
         description: "a 2D game in Java as part of my university coursework.",
         tech: ["Java"],
     },
     {
-        image: "/Images/ProjectsImages/oldPortfolioWbsite.jpeg",
+        image: "public/Images/ProjectsImages/oldPortfolioWbsite.jpeg",
         title: "Previous Portfolio Website",
         description: "My previous portfolio website that I developed using HTML, CSS, and JavaScript.",
         tech: ["HTML", "CSS", "JavaScript"],
